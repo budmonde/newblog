@@ -1,0 +1,20 @@
+<div class="sidebar">
+  <div class="title">
+    <%= config.title %>
+  </div>
+  <div class="subtitle">
+    <%= config.subtitle %>
+  </div>
+  <div class="menu">
+    <div class="menu-item"><a href="/#">Blog</a></div>
+    <div class="tags></div>
+    <div class="menu-item"><a href="/#">Photos</a></div>
+  </div>
+  <div class="footer">
+    <div class="media">
+    </div>
+  </div>
+  <div class="rights">
+    &copy; <%= date(new Date(), 'YYYY') %>, <%= config.author || config.title %>
+  </div>
+</div>

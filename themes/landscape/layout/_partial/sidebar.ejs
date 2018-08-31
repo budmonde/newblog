@@ -1,0 +1,6 @@
+<aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
+  <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+  <% theme.widgets.forEach(function(widget){ %>
+    <%- partial('_widget/' + widget) %>
+  <% }) %>
+</aside>
